@@ -21,7 +21,7 @@ public class ImagePanel extends JPanel
     Toolkit toolkit = Toolkit.getDefaultToolkit();
     public ImagePanel()
     {
-        image = toolkit.getImage(this.getClass().getResource("/IMG/ls.gif"));
+        image = toolkit.getImage("IMG/splash.gif");
     }
     
     @Override
