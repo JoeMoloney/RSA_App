@@ -5,8 +5,6 @@
  */
 package Classes;
 
-import javax.swing.ImageIcon;
-
 /**
  *
  * @author K00243015
@@ -14,7 +12,7 @@ import javax.swing.ImageIcon;
 public class Question
 {
 
-	private ImageIcon icon;
+//	private ImageIcon icon;
 	private String answer;
 	private String incorrectAns1;
 	private String incorrectAns2;
@@ -22,24 +20,24 @@ public class Question
 
 	public Question(){}
 	
-	public Question(ImageIcon icon, String answer, String incorrectAns1, String incorrectAns2, String incorrectAns3)
+	public Question(String answer, String incorrectAns1, String incorrectAns2, String incorrectAns3)
 	{
-		this.icon = icon;
+//		this.icon = icon;
 		this.answer = answer;
 		this.incorrectAns1 = incorrectAns1;
 		this.incorrectAns2 = incorrectAns2;
 		this.incorrectAns3 = incorrectAns3;
 	}
 
-	public ImageIcon getIcon()
-	{
-		return icon;
-	}
+//	public ImageIcon getIcon()
+//	{
+//		return icon;
+//	}
 
-	public void setIcon(ImageIcon icon)
-	{
-		this.icon = icon;
-	}
+//	public void setIcon(ImageIcon icon)
+//	{
+//		this.icon = icon;
+//	}
 
 	public String getAnswer()
 	{

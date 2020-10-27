@@ -1,0 +1,97 @@
+Low Clearence Information,Next Destination,Speed Limit,Road Warning
+Airport,Runway,Customs,Shipyard
+Alternative Route for HGV's,HGV's Only,Right Lane for HGV's,HGV Customs
+Cul-De-Sac Ahead,T-Junction Ahead,Crossroads Ahead,Dead End Ahead
+Destination Information,Motorway Information,National Road Information,Regional Road Information
+Disabled Parking Only,Wheelchair Access Available,No Wheelchair Access,Multi-Use Parking
+Ferry Ahead,Cars & HGV's Only,Commercial Boats Only,Comercial Vehicle Customs Ahead
+Hospital Ahead,Helipad Ahead,Height Restriction Ahead,H-Junction Ahead
+Motorway Information,Regional Road Information,National Road Information,City Road Information
+National Road Information,Motorway Road Information,Regional Road Information,City Road Information
+Regional Road Information,Motorway Road Information,City Road Information,National Road Information
+Regional Road Information,City Road Information,Motorway Road Information,National Road Information
+SOS Lay-By,Parking & Phone Booth,Emergency Services Ahead,Emergency Services Parking Only
+Town Or Village Information,Street Information,Regional Information,County Information
+Traffic Calming,Speed Limit,Pedestrian Crossing Ahead,Town Or Village Information
+100M To Motorway Exit,100M To Motorway Entrance,100M To Motorway Lay-By,Road Dips To The Right
+200M To Motorway Exit,200M To Motorway Entrance,200M To Motorway Lay-By,Road Dips To The Right
+300M To Motorway Exit,300M To Motorway Entrance,300M To Motorway Lay-By,Road Dips To The Right
+Destination Direction,Lane Change,City Information,Region Information
+Advanced Destination Direction,Advanced Lane Change,Advanced City Information,Advanced Region Information
+Motorway Entrance Ahead,Motorway Bridge Ahead,Low Bridge Ahead,Number Of Lanes Ahead
+Advanced Motorway Entrance Ahead,Advanced Regional Information,Advanced National Information,Advanced Road Information
+Motorway Ends,No Motorway Ahead,Multi-Lane Ends,No Multi-Lane For 1KM
+Motorway Ends,No Motorway Ahead,Multi-Lane Ends,No Multi-Lane For 500M
+Route Confirmation,Regional Information,National Information,Multi-Region Confirmation
+Bus Lane on Left,Cycle Lane Only,Bus Lane Only,Bike & Tram Lane
+Buses Only,No Buses,No Road Ahead,Bus Center Ahead
+Clearway,No Entry,Private Property,Unfinished Sign
+Disc Parking,Legal Parking Hours,Do Not Park During Specific Times,Area In Operation During Designated Dates
+Changeable Speed Limit Area,30KM/h Area,School Crossing Area,Changeable School Bus Speed Limit
+Changeable Tunnel Speed Limit,80KM/h Speed Limit,80KM/h Tunnel Speed Limit,Changeable Speed Limit
+End of Bike Lane,Bike Lane Start,Bikes Only,Bike Parking At End-Of-Lane
+End Of HGV Parking Restriction,No HGV Parking,End Of HGV Entry Restriction,HGV Only Zone
+Height Restriction,Minimum Height Restriction,Flooding Level Warning,Vehicle Length Restriction
+Right Hand Lane - No HGV Overtaking,No HGVs Beyond This Point,Right Lane Finishes,HGV Axle Limit
+Max Speed Limit,Minimum Speed Limit,30KM Stretch Ahead,No Parking For 30KM
+Max Speed Limit,Minimum Speed Limit,120KM Stretch Ahead,No Parking For 120KM
+No Pedestrians Entry Ahead,Ignore Pedestrians Ahead,Pedestrians Have No Rights Ahead,No Pedestrians Will Be Ahead
+No Entry To Vehicles With Greater Referenced Axle Count,No Entry To Vehicles With Lesser Referenced Axle Count,Triple Barrier Ahead,Triple Checkpoints Ahead
+No Entry,Reverse Lane Only,No Road Inclination,No One-Way System Ahead
+No Left Turn,No Parking On Left Side,No Entrances On Left Side,Do Not Observe Left Side Of Road
+No Overtaking,Single Lane Ends,No Carpooling,No Small Vehicles Allowed
+No Right Turn,No Parking On Right Side,No Entrances On Right Side,Do Not Observe Right Side Of Road
+No U Turn,No Right Turn Ahead,Road Direction Does Not Change,Traffic Does Not Flow To The Right
+Parking Permitted During Designated Hours,No Parking During Designated Hours,Parking Available To Left And Right,Parking Prohibited
+Parking Prohibited,Park Only On Left And Right Side Of Road,Do Not Park On Left & Right Hand Side,Parking Allowed During Listed Hours
+Pedestrianised Street,No Entry - Private Property,Area In Operation During Designated Hours,Parking Allowed During Designated Hours
+School Wardens Control Traffic Flow,Pedestrians Must Stop For Traffic,Stop Institutionalised Teaching,Stop Slowing Down For Pedestrians
+Start Of Cycle Track,Cycle Track Ahead,Bikes Flow With Traffic Direction,Bicycle Tracking Permitted
+Stop,Yield,Pedestrians Must Stop,Protesters Stop Sign
+Taxis Parking Only,Taxis Permitted To Left And Right Only,Taxis Not Permitted To Left And Right,Taxis Must Detour Around
+Tram Lane On Right,Tram Approaching From The Right,Trams May Overtake,Trams Only
+Tram Only Street,Cars Only Street,Private Property Ahead,Pedestrians Only Street
+Weight Restrictions Ahead,Minimum Weight Allowed,Axle Limit,Minimum Axle Allowed
+Yield Ahead,Field Ahead,Others Must Yield Ahead,Sign Placeholder - Proceed With Caution
+Yield Ahead - Irish,Field Ahead - Irish,Others Must Yield Ahead - Irish,Sign Placeholder - Proceed With Caution - Irish
+Zone Restriction, No Parking or HGV's,HGV's Only,Minimum Axle Requirement,Parking Permitted To Large Vehicles Only
+Advanced Direction To Local Services,Local Services Ahead,Regional Information,Non-Permitted Activies 
+Advanced Information For Lay-By And Tourism,Information On Parking Ahead,Tourism Park Ahead,Tourism Press Conference Ahead
+Youth Hostel Ahead,Adoption Agency Ahead,Youth Hotel Ahead,Village Information
+Car Park Directions For Pedestrians,Pedestrian Parking Information,Pedestrian Press Conference Information,Pedestrian Permitted Zone
+Museum Directions For Pestrians,Free-Masons Building Directions,Shopping Mall Directions,Museum Of Pedestrians Direction
+Tourist Information Direction,Information About Tourists Direction,Tourist Detour Sign,Area For Tourists To Share Information
+Tourist Information For Area,Tourist Camp Name,Sign In Foreign Language,Tourist One Way System
+Tourist Attraction Direction,Animal Species One Way System,Birds Only Beyond This Point,Tourist Job Site Direction
+Horses And Ponies Area,Humans Must Be Accompanied By Horses,Horses Must Be Accompanied By Horses,Dangerous Species Ahead
+Cattle And Farm Animals Ahead,Beware Of Livestock,Area Known For Lethal Cattle,Beware Of Wild Feral Bertha
+Crosswinds Ahead,Fishing Nets Sold Here,Bubble Blowing Permitted,Unfinished Sign - Proceed With Caution
+Deer And Wild Animals Ahead,Beware Of Feral Deers,Area Known For Lethal Deers,Deer Society Zone
+Drive On Left Information Sign,Left Hand Drive Cars Only,Two Lanes - Use Left If Neccessary,Left Lane Unless Overtaking
+Train Crossing Ahead With Lights And Barrier,Train Station Ahead,Trains Only Zone,Traffic Lights Apply To Trains Only
+Low Flying Aircraft,Aircraft Only Road,Watch Out For The Planes!,Airforce Memorial Area Ahead
+Overhead Electric Cables,Nikola Tesla Museum Ahead,Electricians Only Zone,Area Known For Alien Lightning Strikes - Proceed With Caution
+Pedestrian Crossing Ahead,Pedestrian Only Zone,Running Track Ahead,Power Walkers Ahead - Proceed With Caution
+Sharp Dip In Road Ahead,Asteroid Crater Ahead,Skate Park Half Pipe Ahead,Aqueduct Ahead
+Sharp Rise Ahead,Bread Bakery Ahead,Dermatologist Ahead,Lumpy Roads Ahead
+Slippery Road Ahead,Drifting Permitted Zone Ahead,Wreckless Drivers Ahead - Proceed With Caution,Perma-Ice Roads Ahead
+Steep Descent Ahead,Brakes Testing Area Ahead,Motor Stunt Ramp Ahead,Handbrake Only Zone
+Traffic Lights Ahead,Drag Strip Ahead,Simon Says Zone Ahead,Air Temperature Display
+Tunnel Ahead,Palace Entrance Ahead,Entrance To The Void Ahead,Casket Manufacturing Area Ahead
+Unprotected Canal or River Ahead,Vehicle Dumping River Ahead,Amphibious Vehicles Only,Vehicles Only Beyond This Point
+Diverted Traffic,Left Turn Only,No Right Turn,Observe Left Hand Side Of The Road
+Flagman Ahead,Toll Man Ahead,Buckets Only Beyond This Point,Persistent Road Worker Ahead
+Loose Chippings,Road May Cause Tyre Blowouts,Area Known For Pebble Dashing,Small Vehicles Only
+Queues Likely,3 Vehicles Max When Overtaking,Blow Horn If Behind Three Vehicles,Lane Wide-Enough For Three Vehicles
+Roadworks Ahead,Shovel Salesman Ahead,Square Dancing And Line Dancing Ahead,Road Workers Are Left Handed
+Site Access On Left,Road Workers Are Right Handed,Square Dancing And Line Dancing Ahead,Roadworks Ahead
+Uneven Surface,Pointless Road Surface Ahead,Marsh Land Ahead,Amphibious Vehicles Recommended Ahead
+Dangerous Bend Ahead,Passengers Lean To The Left,Winds Blowing To The Left,Liberals Zone To The Left
+Dangerous Corner Ahead,Sharp Left Turns Only,Extreme Liberals To The Left,Prepare For Hard Left
+Merging Traffic,Tree Branches Ahead,Severe Sharp Left Turn Ahead,Quantum Inverting Zone Ahead
+Mini Roundabout Ahead,Roundabout Ahead Is Optional,Clockwise Spin Cycle Dryers Sold Here,Prepare For Infinite Right Turn
+Restricted Head Room,Minimum Height Zone,Water Flooding Warning,Foot To Metres Conversion Information
+Roundabout Ahead,Vortex Prone Area Ahead,Clockwise Tumbledryers Sold Here,Toilet Water Flows Clockwise
+Series Of Dangerous Bends Ahead,Spaghetti Roads Ahead,Drifting Strip Ahead,Left And Right Turns Ahead
+Series Of Dangerous Corners Ahead,Electric Road Ahead,Sharp Left And Right Turn Ahead,Sharp Spaghetti Road Ahead
+Two Way Traffic,You Shall Return On The Road To Your Right,Forward And Backwards Winds Ahead,Quantum Directional Road Ahead

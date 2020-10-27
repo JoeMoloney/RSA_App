@@ -1,0 +1,97 @@
+Information om låg klarhet,nästa destination,hastighetsbegränsning,vägvarning
+Flygplats,landningsbana,tull,varv
+Alternativ väg för HGV: er,HGV: s enda,Höger väg för HGV,HGV Tull
+Cul-De-Sac framåt,T-korsning framåt,vägskäl framåt,återvändsgränd framåt
+Destinationsinformation,motorvägsinformation,nationell väginformation,regional väginformation
+Endast handikapparkering,Rullstolsanpassad,Ingen rullstolsanpassad,Flerbruksparkering
+Färja framåt,endast bilar och lastbilar,endast kommersiella båtar,kommersiella fordonstullar framåt
+Sjukhus framåt,helipad framåt,höjdbegränsning framåt,H-korsning framåt
+Motorväginformation,regional väginformation,nationell väginformation,stadsväginformation
+National Road Information,Motorway Road Information,Regional Road Information,City Road Information
+Regional väginformation,motorvägsväginformation,stadsväginformation,nationell väginformation
+Regional väginformation,stadsväginformation,motorväginformation,nationell väginformation
+SOS Lay-By,Parkering & Telefonkiosk,Emergency Services Framåt,Emergency Services Parking Only
+Stads- eller byinformation,gatuinformation,regional information,länsinformation
+Trafikavstängning,hastighetsgräns,fotgängare framåt,information om staden eller byn
+100M till motorvägsavfarten,100M till motorvägsingången,100M till motorvägsanläggning,vägarna till höger
+200M till motorvägsavfart,200M till motorvägsingång,200M till motorvägspassering,vägdips till höger
+300M till motorvägsavfart,300M till motorvägsingången,300M till motorvägsförläggning,vägdips till höger
+Destinationsriktning,filbyte,stadsinformation,regioninformation
+Avancerad destinationsriktning,avancerad filbyte,avancerad stadsinformation,avancerad regioninformation
+Motorvägsingång framåt,motorvägbro framåt,låg bro framåt,antal körfält framåt
+Avancerad motorvägsingång framåt,avancerad regional information,avancerad nationell information,avancerad väginformation
+Motorvägsändar,inga motorvägar framåt,flervägsändar,inga flerfält för 1 km
+Motorvägsändar,ingen motorväg framåt,flervägsändar,inga flerfält för 500M
+Ruttbekräftelse,regional information,nationell information,bekräftelse av flera regioner
+Bussfält till vänster,Endast cykelfält,Endast bussfält,Bike & Tram Lane
+Endast bussar,inga bussar,ingen väg framåt,busscentrum framåt
+Clearway,Ingen entré,Privat egendom,Oavslutat tecken
+Skivparkering,laglig parkeringstid,parkera inte under specifika tider,område i drift under angivna datum
+Utbytbart hastighetsbegränsningsområde,30 km / h-område,skolövergångsområde,utbytbart hastighetsgräns för skolbuss
+Ändringsbar hastighetsgräns för tunnel,80 km / h hastighetsgräns,80 km / h hastighetsgräns för tunnel,ändringsbar hastighetsgräns
+End of Bike Lane,Bike Lane Start,Cikes Only,Bike Parking At End-Of-Lane
+Slut på HGV-parkeringsbegränsning,Ingen HGV-parkering,Slut på HGV-begränsning,Endast HGV-zon
+Höjdbegränsning,Minsta höjdbegränsning,översvämningsnivåvarning,fordonslängdbegränsning
+Höger körfält - Ingen HGV-omkörning,Inga HGVs bortom denna punkt,Höger körfält,HGV Axelgräns
+Max hastighetsgräns,minimihastighetsgräns,30 km sträckning framåt,ingen parkering för 30 km
+Max hastighetsgräns,minimihastighetsgräns,120 km sträckning framåt,ingen parkering för 120 km
+nga fotgängare kommer framåt,ignorerar fotgängare framåt,fotgängare har inga rättigheter framåt,inga fotgängare kommer framåt
+ngen entré till fordon med större referensaxelantal,inget inträde till fordon med mindre referensaxelantal,trippel barriär framåt,trippel kontrollpu
+ngen entré,endast bakåtriktad bana,ingen väglutning,inget enkelriktat system framåt
+ngen vänster sväng,ingen parkering på vänster sida,inga ingångar på vänster sida,observera inte vänster sida av vägen
+ngen omkörning,Enda körfält,Ingen samkörning,Inga små fordon tillåtna
+ngen höger sväng,ingen parkering på höger sida,inga ingångar på höger sida,observera inte höger sida av vägen
+ngen sväng U,ingen höger sväng framåt,vägriktningen ändras inte,trafiken flyter inte åt höger
+Parkering tillåten under angivna timmar,ingen parkering under angivna timmar,parkering tillgänglig till vänster och höger,parkering förbjuden
+Parkering förbjuden,Parkera endast på vänster och höger sida av vägen,Parkera inte på vänster och höger sida,Parkering tillåten under listad
+Gågata,ingen entré - privat egendom,område i drift under angivna timmar,parkering tillåten under angivna timmar
+Skolvakter kontrollerar trafikflödet,fotgängare måste stanna för trafik,sluta institutionaliserad undervisning,sluta sakta ner för fotgängare
+Start av cykelspår,cykelspår framåt,cyklar flödar med trafikriktning,cykelspårning tillåten
+Stopp,avkastning,fotgängare måste sluta,protesterande stoppskylt
+Endast taxiparkering,taxibilar tillåts endast till vänster och höger,taxibilar som inte är tillåtna till vänster och höger,taxibilar måste ta sig runt
+Spårvagnsfält till höger,spårvagn som närmar sig från höger,spårvagnar kan passera,endast spårvagnar
+Tram Only Street,Cars Only Street,Private Property Ahead,Only Pedestrians Only Street
+Viktbegränsningar framåt,Minsta tillåtna vikt,Axelgräns,Minsta tillåtna axel
+Avkastning framåt,fält framåt,andra måste ge sig framåt,underteckna platshållare - fortsätt med försiktighet
+Avkastning framåt - Irländsk,Fält framåt - Irländsk,andra måste avkastning framåt - Irländsk,underteckna platshållare - Fortsätt med försiktigh
+Zonbegränsning,Ingen parkering eller HGV,Endast HGV,Minsta axelkrav,Parkering tillåten endast för stora fordon
+Avancerad riktning till lokala tjänster,lokala tjänster framåt,regional information,icke-tillåtna aktiviteter
+Avancerad information för lay-by och turism,information om parkering framåt,Tourism Park framåt,turismens presskonferens framåt
+Youth Hostel Ahead,Adoption Agency Ahead,Youth Hotel Ahead,Village Information
+Parkeringsanvisningar för fotgängare,information om fotgängarparkering,information om fotgängares presskonferens,tillåten zon för fotgängare
+Museibeskrivning för fotgängare,vägbeskrivning för frimurare,vägbeskrivning för köpcentrum,riktning för fotgängarmuseum
+Turistinformation riktning,information om turister riktning,turist omväg tecken,område för turister att dela information
+Turistinformation för området,turistlägernamn,inloggning främmande språk,turistsystem
+Turistattraktionsriktning,djurarter enkelriktat system,fåglar bara bortom denna punkt,turistarbetsplatsriktning
+Hästar och ponnyer,människor måste åtföljas av hästar,hästar måste åtföljas av hästar,farliga arter framåt
+Nötkreatur och husdjur framåt,akta dig för boskap,område som är känt för dödlig nötkreatur,akta dig för vilda vilddjur Bertha
+Sidvind framåt,fisknät som säljs här,bubblor som tillåts,oavslutat tecken - fortsätt med försiktighet
+Rådjur och vilda djur framåt,se upp för vildhjortar,område känt för dödliga hjortar,hjortföreningens zon
+Kör på vänster informationsskylt,endast vänsterstyrd bil,två körfält - använd vänster om det behövs,vänster körfält om inte körning
+Tågkorsning framåt med ljus och barriär,tågstation framåt,endast tågzon,trafikljus gäller endast tåg
+Lågflygplan,endast flygplan,se upp för flygplanen!,Flygvapens minnesområde framåt
+Övergående elkablar,Nikola Tesla-museet framåt,Endast zon för elektriker,område känt för främmande blixtnedslag - Fortsätt med försiktighe
+Gångkörning framåt,Endast gågatan,Löpbanan framåt,Power Walkers framåt - Fortsätt med försiktighet
+Sharp Dip In Road Ahead,Asteroid Crater Ahead,Skate Park Half Pipe Ahead,Aqueduct Ahead
+Skarp stigning framåt,Brödbageri framåt,Dermatolog framåt,Klumpiga vägar framåt
+Slippery Road Ahead,Drifting Permitted Zone Ahead,Wreckless Driver Ahead - Fortsätt med försiktighet,Perma-isvägar framåt
+Brant nedstigning framåt,Bromsar testområde framåt,Motorstunt ramp framåt,Endast handbromszon
+Trafikljus framåt,Dragremsa framåt,Simon säger zon framåt,lufttemperaturvisning
+Tunnel framåt,Palace Entrance Ahead,Entrance To The Void Ahead,Casket Manufacturing Area Ahead
+Oskyddad kanal eller flod framåt,fordon som tappar floden framåt,endast amfibiska fordon,endast fordon utanför denna punkt
+Vidarekopplad trafik,endast vänster sväng,ingen höger sväng,observera vänster sida av vägen
+Flagman framåt,Vägtullar framåt,skopor bara bortom denna punkt,ihållande vägarbetare framåt
+Lösa flisor,väg kan orsaka däcksprängningar,område känt för stenstrimling,endast små fordon
+Köer troligtvis,3 fordon maximalt vid förbikörning,blåshorn om bakom tre fordon,körfält bred för tre fordon
+Vägarbeten framåt,spadehandlare framåt,fyrkantig dans och linjedans framåt,vägarbetare är vänsterhänt
+Platsåtkomst till vänster,vägarbetare är högerhänt,fyrkantig dans och linjedans framåt,vägarbeten framåt
+Ojämn yta,meningslös vägyta framåt,marsh land framåt,amfibiska fordon rekommenderas framåt
+Farlig böj framåt,passagerare lutar sig till vänster,vindar som blåser till vänster,liberala zoner till vänster
+Farligt hörn framåt,skarpt vänster svänger bara,extrema liberaler till vänster,förbered dig för hårt vänster
+Sammanfogande trafik,trädgrenar framåt,kraftigt skarp vänster sväng framåt,kvantinverterande zon framåt
+Mini-rondellen framåt,Roundabout Ahead är valfri,medurs centrifugeringstorkar som säljs här,förbered dig för oändlig högervarv
+Begränsat huvudrum,minimihöjdzon,varning för översvämning av vatten,omvandlingsinformation från fot till meter
+Rondell framåt,virvelberoende område framåt,medsols torktumlare som säljs här,toalettvatten rinner medurs
+Serie av farliga böjningar framåt,spagettivägar framåt,drivande remsor framåt,vänster och höger vänder framåt
+Serie av farliga hörn framåt,elektrisk väg framåt,skarp vänster och höger sväng framåt,skarp spaghetti väg framåt
+Tvåvägs trafik,du ska återvända på vägen till höger,framåt och bakåtvindar framåt,kvantriktad väg framåt
