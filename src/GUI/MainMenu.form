@@ -177,9 +177,12 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="dtLbl" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="dtLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="timeRemaining" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
                   <EmptySpace pref="258" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -190,6 +193,8 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="dtLbl" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
+                  <Component id="timeRemaining" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -199,6 +204,8 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="[Date/Time]"/>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="timeRemaining">
         </Component>
       </SubComponents>
     </Container>

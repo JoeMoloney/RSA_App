@@ -7,23 +7,27 @@ package GUI;
 
 import Classes.Question;
 import Classes.RSAImages;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.text.DateFormat;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Locale;
+import java.util.Random;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JRadioButton;
+import javax.swing.Timer;
 
 /**
  *
@@ -32,15 +36,15 @@ import javax.swing.JRadioButton;
 public class MainMenu extends javax.swing.JFrame
 {
 
-	//Initialize Arrays
+	//Initialize Image List 
 	ArrayList<RSAImages> imgList;
+	//Initialize Questions Lists
 	List<Question>  qList = new ArrayList<>(), qList_en = new ArrayList<>(), qList_fi = new ArrayList<>(), qList_nl = new ArrayList<>(), qList_sv = new ArrayList<>();
-	Integer rand_int[] = {0, 1, 2, 3}; //rand_int Array w/elements 0 to 3 - these will index the buttons array
-	List<Integer> intList = new ArrayList(Arrays.asList(rand_int)); //move rand_int array into List intList
 		
-	//Initialize DateFormatting & Calendar
+	//Initialize Formatting
 	DateFormat df;
 	GregorianCalendar cal = new GregorianCalendar();
+	DecimalFormat td = new DecimalFormat("00");
 	
 	//Initialize Locales
 	Locale locale;
@@ -50,20 +54,49 @@ public class MainMenu extends javax.swing.JFrame
 	static ResourceBundle rb = ResourceBundle.getBundle("bundles.rb");
 	
 	//Initialize primitive variables
-	//maxQuestions = total number of questions -1 for user to take
-	int count = 0, attempt = 0, correct = 0, maxQuestions = 21;
+	int attempt, correct = 0, maxQuestions = 10; //maxQuestions = total number of questions for user to take
+	int timeLimit = 60 * 2; //Time Limit [change [2] to however many minutes you want the test to run for]
+	int tm = timeLimit / 60, ts = timeLimit % 60; //Variables for formatting countdown timer
+	
+	//Select random question to begin with
+	Random rand = new Random();
+	int count = rand.nextInt(96 - 0 + 1) + 0; //Generate random number between 96 & 0 [randomizes starting question]
 
+	//Initialize Timer
+	Timer t1 = new Timer(1000, new ActionListener()
+		{
+
+			@Override
+			public void actionPerformed(ActionEvent ae)
+			{
+				if(ts > 0) //If seconds is greater than 0
+					ts--; //Decrement seconds by 1
+				else if(ts == 0 && tm > 0) //If seconds = 0 & minutes is greater than 1
+				{
+					tm --; //Decrement minutes by 1
+					ts += 59; //Increment seconds by 59
+				}
+				if (tm == 0 && ts == 0) //If both seconds and minutes are 0
+					terminateTest(); //Finish test
+				timeRemaining.setText(td.format(tm)+":"+td.format(ts)); //Format the time each tick
+			}
+		});
+	
 	/**
 	 * Creates new form MainMenu
 	 */
 	public MainMenu()
 	{
 		initComponents();
-		//List<Question> qList = new ArrayList<>(), qList_en = new ArrayList<>();
+		
+		df = DateFormat.getDateInstance(DateFormat.FULL, locales[0]); //Get current date
+		dtLbl.setText(df.format(cal.getTime())); //Apply date locale to label
+		
+		
 		//Set default ResourceBundle
 		rb = ResourceBundle.getBundle("bundles.rb_en");
 		
-		File folder = new File("IMG/Signs/");
+		File folder = new File("IMG/Signs/"); //Path for images
 		try
 		{
 			imgList = getAllImages(folder, true); //Get images
@@ -84,27 +117,26 @@ public class MainMenu extends javax.swing.JFrame
 		
 		qList.addAll(qList_en); //Set default Language to English
 		
-		df = DateFormat.getDateTimeInstance(DateFormat.FULL, DateFormat.FULL, locales[0]);  //Set date/time local to English
-		dtLbl.setText(df.format(cal.getTime())); //Aply locale to label
+		//Initialize buttons with 1st Question
+		ans1.setText(qList.get(count).getAnswer()); //Set first answer to button
+		ans1.setActionCommand(qList.get(count).getAnswer()); //Set first answer to ActionCommand (For Comparison in Next(); method)
 		
-		//Assign names to radio buttons
-//		ans1.setName("ans1");
-//		ans2.setName("ans2");
-//		ans3.setName("ans3");
-//		ans4.setName("ans4");
+		ans2.setText(qList.get(count).getIncorrectAns1()); //Set second answer to button
+		ans2.setActionCommand(qList.get(count).getIncorrectAns1()); //Set second answer to ActionCommand (For Comparison in Next(); method)
 		
-		//Initialize buttons with questions
-		ans1.setText(qList.get(count).getAnswer());
-		ans1.setActionCommand(qList.get(count).getAnswer());
-		ans2.setText(qList.get(count).getIncorrectAns1());
-		ans2.setActionCommand(qList.get(count).getIncorrectAns1());
-		ans3.setText(qList.get(count).getIncorrectAns2());
-		ans3.setActionCommand(qList.get(count).getIncorrectAns2());
-		ans4.setText(qList.get(count).getIncorrectAns3());
-		ans4.setActionCommand(qList.get(count).getIncorrectAns3());
+		ans3.setText(qList.get(count).getIncorrectAns2()); //Set third answer to button
+		ans3.setActionCommand(qList.get(count).getIncorrectAns2()); //Set third answer to ActionCommand (For Comparison in Next(); method)
+		
+		ans4.setText(qList.get(count).getIncorrectAns3()); //Set fourth answer to button
+		ans4.setActionCommand(qList.get(count).getIncorrectAns3()); //Set fourth answer to ActionCommand (For Comparison in Next(); method)
+		
+		//Debug - Console out correct answer to be selected
+		System.out.println("Correct Answer Is: "+qList.get(count).getAnswer());
 		
 		String imageP = imgList.get(count).getPath(); //Get image path
 		imgLbl.setIcon(new ImageIcon(imageP)); //Convert to icon and display
+		
+		t1.start(); //Start timer on program load
 	}
 
 	/**
@@ -127,6 +159,7 @@ public class MainMenu extends javax.swing.JFrame
         sweLcl = new javax.swing.JRadioButton();
         leaderboardPanel = new javax.swing.JPanel();
         dtLbl = new javax.swing.JLabel();
+        timeRemaining = new javax.swing.JLabel();
         quizPanel = new javax.swing.JPanel();
         questionPanel = new javax.swing.JPanel();
         qPromptLbl = new javax.swing.JLabel();
@@ -238,7 +271,9 @@ public class MainMenu extends javax.swing.JFrame
             leaderboardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(leaderboardPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(dtLbl)
+                .addGroup(leaderboardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(dtLbl)
+                    .addComponent(timeRemaining))
                 .addContainerGap(258, Short.MAX_VALUE))
         );
         leaderboardPanelLayout.setVerticalGroup(
@@ -246,7 +281,9 @@ public class MainMenu extends javax.swing.JFrame
             .addGroup(leaderboardPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(dtLbl)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(timeRemaining)
+                .addContainerGap())
         );
 
         questionPanel.setBackground(new java.awt.Color(255, 255, 255));
@@ -416,121 +453,124 @@ public class MainMenu extends javax.swing.JFrame
 
     private void engLclActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_engLclActionPerformed
     {//GEN-HEADEREND:event_engLclActionPerformed
-List<JRadioButton> buttons = new ArrayList<>();
+	List<JRadioButton> buttons = new ArrayList<>();
 		buttons.add(ans1);
 		buttons.add(ans2);
 		buttons.add(ans3);
 		buttons.add(ans4);	
-//Set Date/Time Locale
-	df = DateFormat.getDateTimeInstance(DateFormat.FULL, DateFormat.FULL, locales[0]);
-	dtLbl.setText(df.format(cal.getTime()));
+	
+	df = DateFormat.getDateInstance(DateFormat.FULL, locales[0]); //Get current date
+	dtLbl.setText(df.format(cal.getTime())); //Apply date locale to label
         
-	locale = locales[0];
+	locale = locales[0]; //Set locale to English
 		
 	qList = qList_en; //Set working list of questions to English 
 	
-	updateStrings(qList, buttons);
+	qList = updateStrings(qList, buttons); //Update GUI components & set new active working Question List
 	
-	buttons = null;
+	buttons = null; //Empty local buttons List
 	System.gc(); //Force invoke garbage collecter
     }//GEN-LAST:event_engLclActionPerformed
 
     private void finLclActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_finLclActionPerformed
     {//GEN-HEADEREND:event_finLclActionPerformed
-	List<JRadioButton> buttons = new ArrayList<>();
+	List<JRadioButton> buttons = new ArrayList<>(); //List containing GUI JRadioButtons
 		buttons.add(ans1);
 		buttons.add(ans2);
 		buttons.add(ans3);
 		buttons.add(ans4);
-	//Set Date/Time Locale
-	df = DateFormat.getDateTimeInstance(DateFormat.FULL, DateFormat.FULL, locales[1]);
-	dtLbl.setText(df.format(cal.getTime()));
+	
+	df = DateFormat.getDateInstance(DateFormat.FULL, locales[1]); //Get current date
+	dtLbl.setText(df.format(cal.getTime())); //Apply date locale to label
         
-	locale = locales[1];
+	locale = locales[1]; //Set locale to Finnish
 	
 	qList = qList_fi; //Set working list of questions to Finnish
 	
-	updateStrings(qList, buttons);
+	qList = updateStrings(qList, buttons); //Update GUI components & set new active working Question List
 	
-	buttons = null;
+	buttons = null; //Empty local buttons List
 	System.gc(); //Force invoke garbage collecter
     }//GEN-LAST:event_finLclActionPerformed
 
     private void dutLclActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_dutLclActionPerformed
     {//GEN-HEADEREND:event_dutLclActionPerformed
-	List<JRadioButton> buttons = new ArrayList<>();
+	List<JRadioButton> buttons = new ArrayList<>(); //List containing GUI JRadioButtons
 		buttons.add(ans1);
 		buttons.add(ans2);
 		buttons.add(ans3);
 		buttons.add(ans4);
-	//Set Date/Time Locale
-	df = DateFormat.getDateTimeInstance(DateFormat.FULL, DateFormat.FULL, locales[2]);
-	dtLbl.setText(df.format(cal.getTime()));
+	
+	df = DateFormat.getDateInstance(DateFormat.FULL, locales[2]); //Get current date
+	dtLbl.setText(df.format(cal.getTime())); //Apply date locale to label
         
-	locale = locales[2];
+	locale = locales[2]; //Set locale to Dutch
 		
 	qList = qList_nl; //Set working list of questions to Dutch
 	
-	updateStrings(qList, buttons);
+	qList = updateStrings(qList, buttons); //Update GUI components & set new active working Question List
 	
-	buttons = null;
+	buttons = null; //Empty local buttons List
 	System.gc(); //Force invoke garbage collecter
     }//GEN-LAST:event_dutLclActionPerformed
 
     private void sweLclActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_sweLclActionPerformed
     {//GEN-HEADEREND:event_sweLclActionPerformed
-	List<JRadioButton> buttons = new ArrayList<>();
+	List<JRadioButton> buttons = new ArrayList<>(); //List containing GUI JRadioButtons
 		buttons.add(ans1);
 		buttons.add(ans2);
 		buttons.add(ans3);
 		buttons.add(ans4);
 		
-	//Set Date/Time Locale
-	df = DateFormat.getDateTimeInstance(DateFormat.FULL, DateFormat.FULL, locales[3]);
-	dtLbl.setText(df.format(cal.getTime()));
+	df = DateFormat.getDateInstance(DateFormat.FULL, locales[3]); //Get current date
+	dtLbl.setText(df.format(cal.getTime())); //Apply date locale to label
         
-	locale = locales[3];
+	locale = locales[3]; //Set locale to Swedish
 		
 	qList = qList_sv; //Set working list of questions to Swedish
 	
-	updateStrings(qList, buttons);
+	qList = updateStrings(qList, buttons); //Update GUI components & set new active working Question List
 	
-	buttons = null;
+	buttons = null; //Empty local buttons List
 	System.gc(); //Force invoke garbage collecter
     }//GEN-LAST:event_sweLclActionPerformed
 
     private void submitBtnActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_submitBtnActionPerformed
     {//GEN-HEADEREND:event_submitBtnActionPerformed
-	List<JRadioButton> buttons = new ArrayList<>();
+	List<JRadioButton> buttons = new ArrayList<>(); //List containing GUI JRadioButtons
 		buttons.add(ans1);
 		buttons.add(ans2);
 		buttons.add(ans3);
 		buttons.add(ans4);
 		
-	next(qList, buttons);
+	next(qList, buttons); //Get next question
 	
-	buttons = null;
+	buttons = null; //Empty local buttons List
 	System.gc(); //Force invoke garbage collecter
     }//GEN-LAST:event_submitBtnActionPerformed
 
     private void ans1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_ans1ActionPerformed
     {//GEN-HEADEREND:event_ans1ActionPerformed
-	ans1.setSelected(true);
+	ans1.setSelected(true); //Set selected button
+	submitBtn.setEnabled(true); //Enable Submit button
     }//GEN-LAST:event_ans1ActionPerformed
 
     private void ans2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_ans2ActionPerformed
     {//GEN-HEADEREND:event_ans2ActionPerformed
-	ans2.setSelected(true);
+	ans2.setSelected(true); //Set selected button
+	submitBtn.setEnabled(true); //Enable Submit button
     }//GEN-LAST:event_ans2ActionPerformed
 
     private void ans3ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_ans3ActionPerformed
     {//GEN-HEADEREND:event_ans3ActionPerformed
-	ans3.setSelected(true);
+	ans3.setSelected(true); //Set selected button
+	submitBtn.setEnabled(true); //Enable Submit button
     }//GEN-LAST:event_ans3ActionPerformed
 
     private void ans4ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_ans4ActionPerformed
     {//GEN-HEADEREND:event_ans4ActionPerformed
-	ans4.setSelected(true);
+	ans4.setSelected(true); //Set selected button
+	submitBtn.setEnabled(true); //Enable Submit button
     }//GEN-LAST:event_ans4ActionPerformed
 
 	/**
@@ -599,45 +639,46 @@ List<JRadioButton> buttons = new ArrayList<>();
     private javax.swing.JPanel quizPanel;
     private javax.swing.JButton submitBtn;
     private javax.swing.JRadioButton sweLcl;
+    private javax.swing.JLabel timeRemaining;
     // End of variables declaration//GEN-END:variables
 	
-	private ArrayList<RSAImages> getAllImages(File directory, boolean subDirectory) throws IOException
+	private ArrayList<RSAImages> getAllImages(File directory, boolean subDirectory) throws IOException //Get all images for test
 	{
-		ArrayList<RSAImages> resultList = new ArrayList<>();
+		ArrayList<RSAImages> resultList = new ArrayList<>(); //List for storing images
 
-		File[] f = directory.listFiles();
+		File[] f = directory.listFiles(); //List all files in given directory
 
 		for (File file : f)
 		{
-			RSAImages image = new RSAImages();
-			image.setCategory(directory.getName());
-			image.setPath(file.getCanonicalPath());
-			image.setImageName(file.getName());
-			resultList.add(image);
+			RSAImages image = new RSAImages(); //Create new image object
+			image.setCategory(directory.getName()); //Set image category
+			image.setPath(file.getCanonicalPath()); //Set image path
+			image.setImageName(file.getName()); //Set image name
+			resultList.add(image); //Add image to List
 
-			if (subDirectory && file.isDirectory())
+			if (subDirectory && file.isDirectory()) //If looking at folder
 			{
-				ArrayList<RSAImages> tmp = getAllImages(file, true);
+				ArrayList<RSAImages> tmp = getAllImages(file, true); //Get all images within' the folder recursively
 				if (tmp != null)
-					resultList.addAll(tmp);
+					resultList.addAll(tmp); //Add all images to List
 			}
 		}
 		
 		for (int i = 0; i < resultList.size(); i++) //Remove Folder paths from List
 		{
-			if (!resultList.get(i).getImageName().endsWith(".gif"))
-				resultList.remove(i);
+			if (!resultList.get(i).getImageName().endsWith(".gif")) //If entry does not have .gif in the name
+				resultList.remove(i); //remove
 		}
 		
 		if (resultList.size() > 0)
-			return resultList;
+			return resultList; //return completed list
 		return null;
 	}
 
 	private List<Question> generateQuestionObject(Path p)
 	{
-		List<Question> resultList = new ArrayList<>();
-		List<String> questions = new ArrayList<>();
+		List<Question> resultList = new ArrayList<>(); //List to store question objects
+		List<String> questions = new ArrayList<>(); //List to store individual lines read from text file
 		try
 		{
 			questions = Files.readAllLines(p); //Get Question Lines
@@ -645,21 +686,21 @@ List<JRadioButton> buttons = new ArrayList<>();
 		
 			for(String qLine : questions)
 			{
-				Question q = new Question();
+				Question q = new Question(); //Create new question object
 				String parts[] = qLine.split(","); //Get the line, split at delimeter		
 				q.setAnswer(parts[0]); //Set first part as question objects Answer
 				q.setIncorrectAns1(parts[1]); //Set second part as question objects 1st incorrect answer
 				q.setIncorrectAns2(parts[2]); //Set third part as question objects 2nd incorrect answer
 				q.setIncorrectAns3(parts[3]); //Set final part as question objects 3rd incorrect answer
 				
-				resultList.add(q);
+				resultList.add(q); //Add question object to list
 			}
-			return resultList;
+			return resultList; //return the list
 	}
 
-	private void updateStrings(List<Question> qList, List<JRadioButton> buttons)
+	private List updateStrings(List<Question> qList, List<JRadioButton> buttons)
 	{
-		rb = ResourceBundle.getBundle("bundles.rb", locale);
+		rb = ResourceBundle.getBundle("bundles.rb", locale); //Get locale strings and apply to GUI components
 		LanguageLbl.setText(rb.getString("Language_Label"));
 		engLcl.setText(rb.getString("English_Lang"));
 		finLcl.setText(rb.getString("Finnish_Lang"));
@@ -683,62 +724,84 @@ List<JRadioButton> buttons = new ArrayList<>();
 		
 		//Debug - Console out correct answer to be selected
 		System.out.println("Correct Answer Is: "+qList.get(count).getAnswer());
+		
+		return qList; //Return new active questions list to be used
 	}
 
 	private void next(List<Question> qList, List<JRadioButton> buttons)
 	{	
-		if(attempt < maxQuestions) //While maxQuestions have not been attempted [Change maxQuestions to number of questions-1 to be attempted]
+		if(t1.isRunning())
 		{
-			//If actionCommand of selected button matches questionObjects correctAnswer
-			if(ansButtonGroup.getSelection().getActionCommand().equals(qList.get(count).getAnswer()))
-				correct++;
-			
-			//For Code Flow Debugging
-			System.out.println(String.format("Count: %d, Attempt: %d, Correct: %d", count, attempt, correct));
-//			System.out.println("Selected Answer: "+ansButtonGroup.getSelection().getActionCommand()+"\n");
-			
-			count++; //Increment general counter
-			attempt++; //Increment attempt counter
-			ansButtonGroup.clearSelection(); //Clear Selection for next round
+			if (count == 96) //Start at beginning of question List if the end is reached
+				count = 0;
 		
-			Collections.shuffle(buttons); //Shuffle buttons around for randomization
+			if(attempt < maxQuestions) //While maxQuestions have not been attempted [Change maxQuestions to number of questions to be attempted]
+			{
+				//If actionCommand String of selected button matches questionObjects correctAnswer String
+				if(ansButtonGroup.getSelection().getActionCommand().equals(qList.get(count).getAnswer()))
+					correct++;
 			
-			buttons.get(0).setText(qList.get(count).getAnswer()); //Set text to correct answer
-			buttons.get(0).setActionCommand(qList.get(count).getAnswer()); //Set ActionCommand to correct answer (for comparisons - line 639)
+				//For Code Flow Debugging
+				System.out.println(String.format("Count: %d, Attempt: %d, Correct: %d", count, attempt, correct));
 			
-			buttons.get(1).setText(qList.get(count).getIncorrectAns1()); //Set text to first incorrect answer
-			buttons.get(1).setActionCommand(qList.get(count).getIncorrectAns1()); //Set ActionCommand to first incorrect answer
-			
-			buttons.get(2).setText(qList.get(count).getIncorrectAns2()); //Set text to second incorrect answer
-			buttons.get(2).setActionCommand(qList.get(count).getIncorrectAns2()); //Set ActionCommand to second incorrect answer
-			
-			buttons.get(3).setText(qList.get(count).getIncorrectAns3()); //Set text to third incorrect answer
-			buttons.get(3).setActionCommand(qList.get(count).getIncorrectAns3()); //Set ActionCommand to third incorrect answer
+				count++; //Increment general counter
+				attempt++; //Increment attempt counter
+				ansButtonGroup.clearSelection(); //Clear Selection for next round
 		
-			//Debug - Console out correct answer to be selected
-			System.out.println("Correct Answer Is: "+qList.get(count).getAnswer());
+				Collections.shuffle(buttons); //Shuffle buttons around for randomization
+			
+				buttons.get(0).setText(qList.get(count).getAnswer()); //Set text to correct answer
+				buttons.get(0).setActionCommand(qList.get(count).getAnswer()); //Set ActionCommand to correct answer (for comparisons - line 639)
+			
+				buttons.get(1).setText(qList.get(count).getIncorrectAns1()); //Set text to first incorrect answer
+				buttons.get(1).setActionCommand(qList.get(count).getIncorrectAns1()); //Set ActionCommand to first incorrect answer
+			
+				buttons.get(2).setText(qList.get(count).getIncorrectAns2()); //Set text to second incorrect answer
+				buttons.get(2).setActionCommand(qList.get(count).getIncorrectAns2()); //Set ActionCommand to second incorrect answer
+			
+				buttons.get(3).setText(qList.get(count).getIncorrectAns3()); //Set text to third incorrect answer
+				buttons.get(3).setActionCommand(qList.get(count).getIncorrectAns3()); //Set ActionCommand to third incorrect answer
 		
-			String imageP = imgList.get(count).getPath(); //Get image path
-			imgLbl.setIcon(new ImageIcon(imageP)); //Convert to icon and display on JLabel
+				//Debug - Console out correct answer to be selected
+				System.out.println("Correct Answer Is: "+qList.get(count).getAnswer());
+		
+				String imageP = imgList.get(count).getPath(); //Get image path
+				imgLbl.setIcon(new ImageIcon(imageP)); //Convert to icon and display on JLabel
+			}
+			else //Finish test when all questions have been answered
+			{
+				terminateTest();
+			}
+			submitBtn.setEnabled(false); //Disable Submit button until user has made a selection
 		}
-		else //Empty GUI and display users results
+		else //If timer stops before all questions are answered
+			terminateTest();
+	}
+
+	private void terminateTest()
+	{
+		t1.stop();
+		qPromptLbl.setText("");
+		submitBtn.setEnabled(false);
+		imgLbl.setIcon(null);
+		List<JRadioButton> buttons = new ArrayList<>(); //List containing GUI JRadioButtons
+			buttons.add(ans1);
+			buttons.add(ans2);
+			buttons.add(ans3);
+			buttons.add(ans4);
+		
+		for(JRadioButton button : buttons)
 		{
-			qPromptLbl.setText("");
-			submitBtn.setEnabled(false);
-			imgLbl.setIcon(null);
-			for(JRadioButton button : buttons)
-			{
-				button.setText("");
-				button.setEnabled(false);
-			}
-			if (correct >= (10/2))
-			{
-				imgLbl.setText(String.format("You Have Passed! You Scored: %d / %d Questions Correct!", correct, attempt));
-			}
-			else if(correct < (10/2))
-			{
-				imgLbl.setText(String.format("Sorry, You Have Not Passed, You Scored: %d / %d Questions Correct", correct, attempt));
-			}
+			button.setText("");
+			button.setEnabled(false);
 		}
+		if (correct >= (maxQuestions * 0.7)) //Need 70% correct to pass
+			imgLbl.setText(String.format("You Have Passed! You Scored: %d / %d Questions Correct!", correct, attempt));
+		
+		else //Fail if scored less than 70%
+			imgLbl.setText(String.format("Sorry, You Have Not Passed, You Scored: %d / %d Questions Correct", correct, attempt));
+		
+		buttons = null; //Empty buttons List
+		System.gc(); //Force invoke garbage collection
 	}
 }

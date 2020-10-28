@@ -7,10 +7,10 @@ Endast handikapparkering,Rullstolsanpassad,Ingen rullstolsanpassad,Flerbrukspark
 Färja framåt,endast bilar och lastbilar,endast kommersiella båtar,kommersiella fordonstullar framåt
 Sjukhus framåt,helipad framåt,höjdbegränsning framåt,H-korsning framåt
 Motorväginformation,regional väginformation,nationell väginformation,stadsväginformation
-National Road Information,Motorway Road Information,Regional Road Information,City Road Information
+Nationell väginformation,Motorvägsväginformation,Regional väginformation,Stad Väg Information
 Regional väginformation,motorvägsväginformation,stadsväginformation,nationell väginformation
 Regional väginformation,stadsväginformation,motorväginformation,nationell väginformation
-SOS Lay-By,Parkering & Telefonkiosk,Emergency Services Framåt,Emergency Services Parking Only
+SOS Lay-By,parkering & telefonbås,räddningstjänster framåt,endast nödtjänstparkering
 Stads- eller byinformation,gatuinformation,regional information,länsinformation
 Trafikavstängning,hastighetsgräns,fotgängare framåt,information om staden eller byn
 100M till motorvägsavfarten,100M till motorvägsingången,100M till motorvägsanläggning,vägarna till höger
@@ -35,15 +35,15 @@ Höjdbegränsning,Minsta höjdbegränsning,översvämningsnivåvarning,fordonsl�
 Höger körfält - Ingen HGV-omkörning,Inga HGVs bortom denna punkt,Höger körfält,HGV Axelgräns
 Max hastighetsgräns,minimihastighetsgräns,30 km sträckning framåt,ingen parkering för 30 km
 Max hastighetsgräns,minimihastighetsgräns,120 km sträckning framåt,ingen parkering för 120 km
-nga fotgängare kommer framåt,ignorerar fotgängare framåt,fotgängare har inga rättigheter framåt,inga fotgängare kommer framåt
-ngen entré till fordon med större referensaxelantal,inget inträde till fordon med mindre referensaxelantal,trippel barriär framåt,trippel kontrollpu
-ngen entré,endast bakåtriktad bana,ingen väglutning,inget enkelriktat system framåt
-ngen vänster sväng,ingen parkering på vänster sida,inga ingångar på vänster sida,observera inte vänster sida av vägen
-ngen omkörning,Enda körfält,Ingen samkörning,Inga små fordon tillåtna
-ngen höger sväng,ingen parkering på höger sida,inga ingångar på höger sida,observera inte höger sida av vägen
-ngen sväng U,ingen höger sväng framåt,vägriktningen ändras inte,trafiken flyter inte åt höger
+Inga fotgängare kommer framåt,ignorerar fotgängare framåt,fotgängare har inga rättigheter framåt,inga fotgängare kommer framåt
+Ingen entré till fordon med större referensaxelantal,inget inträde till fordon med mindre referensaxelantal,trippel barriär framåt,trippel kontrollpunkter framåt
+Ingen entré,endast bakåtriktad bana,ingen väglutning,inget enkelriktat system framåt
+Ingen vänster sväng,ingen parkering på vänster sida,inga ingångar på vänster sida,observera inte vänster sida av vägen
+Ingen omkörning,Enda körfält,Ingen samkörning,Inga små fordon tillåtna
+Ingen höger sväng,ingen parkering på höger sida,inga ingångar på höger sida,observera inte höger sida av vägen
+Ingen sväng U,ingen höger sväng framåt,vägriktningen ändras inte,trafiken flyter inte åt höger
 Parkering tillåten under angivna timmar,ingen parkering under angivna timmar,parkering tillgänglig till vänster och höger,parkering förbjuden
-Parkering förbjuden,Parkera endast på vänster och höger sida av vägen,Parkera inte på vänster och höger sida,Parkering tillåten under listad
+Parkering förbjuden,Parkera endast på vänster och höger sida av vägen,Parkera inte på vänster och höger sida,Parkering tillåten under listade timmar
 Gågata,ingen entré - privat egendom,område i drift under angivna timmar,parkering tillåten under angivna timmar
 Skolvakter kontrollerar trafikflödet,fotgängare måste stanna för trafik,sluta institutionaliserad undervisning,sluta sakta ner för fotgängare
 Start av cykelspår,cykelspår framåt,cyklar flödar med trafikriktning,cykelspårning tillåten
@@ -53,7 +53,7 @@ Spårvagnsfält till höger,spårvagn som närmar sig från höger,spårvagnar k
 Tram Only Street,Cars Only Street,Private Property Ahead,Only Pedestrians Only Street
 Viktbegränsningar framåt,Minsta tillåtna vikt,Axelgräns,Minsta tillåtna axel
 Avkastning framåt,fält framåt,andra måste ge sig framåt,underteckna platshållare - fortsätt med försiktighet
-Avkastning framåt - Irländsk,Fält framåt - Irländsk,andra måste avkastning framåt - Irländsk,underteckna platshållare - Fortsätt med försiktigh
+Avkastning framåt - Irländsk,Fält framåt - Irländsk,andra måste avkastning framåt - Irländsk,underteckna platshållare - Fortsätt med försiktighet - Irländsk
 Zonbegränsning,Ingen parkering eller HGV,Endast HGV,Minsta axelkrav,Parkering tillåten endast för stora fordon
 Avancerad riktning till lokala tjänster,lokala tjänster framåt,regional information,icke-tillåtna aktiviteter
 Avancerad information för lay-by och turism,information om parkering framåt,Tourism Park framåt,turismens presskonferens framåt
@@ -70,7 +70,7 @@ Rådjur och vilda djur framåt,se upp för vildhjortar,område känt för dödli
 Kör på vänster informationsskylt,endast vänsterstyrd bil,två körfält - använd vänster om det behövs,vänster körfält om inte körning
 Tågkorsning framåt med ljus och barriär,tågstation framåt,endast tågzon,trafikljus gäller endast tåg
 Lågflygplan,endast flygplan,se upp för flygplanen!,Flygvapens minnesområde framåt
-Övergående elkablar,Nikola Tesla-museet framåt,Endast zon för elektriker,område känt för främmande blixtnedslag - Fortsätt med försiktighe
+Övergående elkablar,Nikola Tesla-museet framåt,Endast zon för elektriker,område känt för främmande blixtnedslag - Fortsätt med försiktighet
 Gångkörning framåt,Endast gågatan,Löpbanan framåt,Power Walkers framåt - Fortsätt med försiktighet
 Sharp Dip In Road Ahead,Asteroid Crater Ahead,Skate Park Half Pipe Ahead,Aqueduct Ahead
 Skarp stigning framåt,Brödbageri framåt,Dermatolog framåt,Klumpiga vägar framåt
@@ -94,4 +94,4 @@ Begränsat huvudrum,minimihöjdzon,varning för översvämning av vatten,omvandl
 Rondell framåt,virvelberoende område framåt,medsols torktumlare som säljs här,toalettvatten rinner medurs
 Serie av farliga böjningar framåt,spagettivägar framåt,drivande remsor framåt,vänster och höger vänder framåt
 Serie av farliga hörn framåt,elektrisk väg framåt,skarp vänster och höger sväng framåt,skarp spaghetti väg framåt
-Tvåvägs trafik,du ska återvända på vägen till höger,framåt och bakåtvindar framåt,kvantriktad väg framåt
+Tvåvägs trafik,du ska återvända på vägen till höger,framåt och bakåtvind,kvantriktad väg framåt

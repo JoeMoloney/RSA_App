@@ -30,22 +30,22 @@ Schijfparkeren,wettelijke parkeertijden,niet parkeren tijdens specifieke tijden,
 Veranderlijk snelheidslimietgebied,30 km / u gebied,schooloversteekplaats,veranderlijke schoolbus snelheidslimiet
 Veranderlijke tunnel snelheidslimiet,80 km / u snelheidslimiet,80 km / u tunnel snelheidslimiet,veranderlijke snelheidslimiet
 Einde van fietspad,start van fietspad,alleen fietsen,fietsenstalling aan einde van rijstrook
-Einde van parkeerbeperking voor vrachtwagens,geen parkeerplaats voor vrachtwagens,einde van inreisbeperking voor vrachtwagens,zone voor alleen 
+Einde van parkeerbeperking voor vrachtwagens,geen parkeerplaats voor vrachtwagens,einde van inreisbeperking voor vrachtwagens,zone voor alleen vrachtwagens
 Hoogte beperking,minimale hoogte beperking,overstromingsniveau waarschuwing,voertuiglengte beperking
 Rechter rijstrook - geen inhalen van vrachtwagens,geen vrachtwagens voorbij dit punt,afwerkingen rechter rijstrook,aslimiet voor vrachtwagens
 Max. Snelheidslimiet,minimale snelheidslimiet,30 km verderop,geen parkeergelegenheid voor 30 km
 Max. Snelheidslimiet,minimale snelheidslimiet,120 km verderop,geen parkeergelegenheid voor 120 km
 Geen voetgangers vooruit,negeer voetgangers vooruit,voetgangers hebben geen rechten vooruit,geen voetgangers zullen vooruit zijn
-Geen toegang tot voertuigen met een groter aantal assen,geen toegang tot voertuigen met een lager aantal assen,drievoudige barrière vooruit,drievou
+Geen toegang tot voertuigen met een groter aantal assen,geen toegang tot voertuigen met een lager aantal assen,drievoudige barrière vooruit,drievoudige controlepunten vooruit
 Geen toegang,alleen omgekeerde rijstrook,geen helling van de weg,geen eenrichtingssysteem vooruit
 Geen bocht naar links,geen parkeergelegenheid aan de linkerkant,geen ingangen aan de linkerkant,let niet op de linkerkant van de weg
 Geen inhalen,enkele rijbanen,geen carpoolen,geen kleine voertuigen toegestaan
 Geen bocht naar rechts,geen parkeergelegenheid aan de rechterkant,geen ingangen aan de rechterkant,let niet op de rechterkant van de weg
 Geen U-bocht,geen afslag naar rechts,wegrichting verandert niet,verkeer stroomt niet naar rechts
 Parkeren toegestaan ​​tijdens aangegeven uren,niet parkeren tijdens aangegeven uren,parkeren links en rechts mogelijk,parkeren verboden
-Parkeren verboden,parkeren alleen aan de linker- en rechterkant van de weg,niet parkeren aan de linker- en rechterkant,parkeren toegestaan ​​tijdens 
+Parkeren verboden,parkeren alleen aan de linker- en rechterkant van de weg,niet parkeren aan de linker- en rechterkant,parkeren toegestaan ​​tijdens vermelde uren
 Voetgangersstraat,geen toegang - privé-eigendom,gebied in gebruik tijdens aangegeven uren,parkeren toegestaan ​​tijdens aangegeven uren
-Schoolmeesters controleren de verkeersstroom,voetgangers moeten stoppen voor het verkeer,stoppen met geïnstitutionaliseerd lesgeven,stoppen m
+Schoolmeesters controleren de verkeersstroom,voetgangers moeten stoppen voor het verkeer,stoppen met geïnstitutionaliseerd lesgeven,stoppen met vertragen voor voetgangers
 Start van fietspad,fietspad vooruit,fietsen stromen mee met verkeersrichting,fietsparkeren toegestaan
 Stop,Yield,voetgangers moeten stoppen,demonstranten stopbord
 Alleen taxi's parkeren,taxi's alleen links en rechts toegestaan,taxi's niet links en rechts toegestaan,taxi's moeten omrijden
@@ -56,21 +56,21 @@ Opbrengst vooruit,veld vooruit,anderen moeten vooruit gaan,plaatsaanduiding onde
 Opbrengst vooruit - Iers,Veld vooruit - Iers,anderen moeten vooruit gaan - Iers,Plaatsaanduiding ondertekenen - Ga voorzichtig te werk - Iers
 Zonebeperking,niet parkeren of vrachtwagens,alleen vrachtwagens,minimum asvereiste,parkeren is alleen toegestaan ​​voor grote voertuigen
 Geavanceerde richting naar lokale services,lokale services vooruit,regionale informatie,niet-toegestane activiteiten
-Geavanceerde informatie voor parkeerplekken en toerisme,informatie over parkeren verderop,toeristisch park vooruit,toeristische persconferentie voor
+Geavanceerde informatie voor parkeerplekken en toerisme,informatie over parkeren verderop,toeristisch park vooruit,toeristische persconferentie vooruit
 Youth Hostel Ahead,Adoption Agency Ahead,Youth Hotel Ahead,Dorpsinformatie
-Routebeschrijving voor voetgangers,parkeerinformatie voor voetgangers,informatie over persconferenties voor voetgangers,zone met toegestane voetg
+Routebeschrijving voor voetgangers,parkeerinformatie voor voetgangers,informatie over persconferenties voor voetgangers,zone met toegestane voetgangers
 Museumaanwijzingen voor Pestrians,Free-Masons Building Directions,Shopping Mall Directions,Museum of Pedestrians Direction
-Richting voor toeristische informatie,informatie over de richting van toeristen,bord voor een toeristisch omleiding,gebied voor toeristen om informatie t
+Richting voor toeristische informatie,informatie over de richting van toeristen,bord voor een toeristisch omleiding,gebied voor toeristen om informatie te delen
 Toeristische informatie voor gebied,naam toeristenkamp,​​vreemde taal aanmelden,eenrichtingssysteem voor toeristen
 Richting voor toeristische attracties,eenrichtingssysteem voor diersoorten,alleen vogels voorbij dit punt,richting voor toeristische banen
-Gebied voor paarden en pony's,mensen moeten worden vergezeld door paarden,paarden moeten worden vergezeld door paarden,gevaarlijke soorten 
+Gebied voor paarden en pony's,mensen moeten worden vergezeld door paarden,paarden moeten worden vergezeld door paarden,gevaarlijke soorten vooruit
 Vee en boerderijdieren vooruit,pas op voor vee,gebied dat bekend staat om dodelijk vee,pas op voor wilde wilde Bertha
 Zijwind vooruit,visnetten hier verkocht,bellenblazen toegestaan,onvoltooid bord - ga voorzichtig te werk
 Herten en wilde dieren vooruit,pas op voor wilde herten,gebied dat bekend staat om dodelijke herten,Deer Society Zone
 Rijd links op informatiebord,alleen auto's met stuur links,twee rijstroken - gebruik links indien nodig,linker rijstrook tenzij inhalen
 Trein oversteken met lichten en barrière,treinstation vooruit,treinen alleen zone,verkeerslichten alleen van toepassing op treinen
 Laagvliegende vliegtuigen,alleen de weg voor vliegtuigen,pas op voor de vliegtuigen!,Airforce Memorial Area vooruit
-Bovengrondse elektrische kabels,Nikola Tesla Museum verderop,zone voor alleen elektriciens,gebied dat bekend staat om buitenaardse blikseminsl
+Bovengrondse elektrische kabels,Nikola Tesla Museum verderop,zone voor alleen elektriciens,gebied dat bekend staat om buitenaardse blikseminslagen - ga voorzichtig te werk
 Voetgangersoversteekplaats vooruit,zone alleen voetgangers,atletiekbaan vooruit,elektrische wandelaars vooruit - Ga voorzichtig te werk
 Scherpe duik in de weg vooruit,asteroïde krater vooruit,skatepark half pipe vooruit,aquaduct vooruit
 Sharp Rise Ahead,Broodbakkerij Ahead,Dermatoloog Ahead,Lumpy Roads Ahead
@@ -93,5 +93,5 @@ Minirotonde vooruit,rotonde vooruit is optioneel,Drogers met draaiing rechtsom w
 Beperkte hoofdruimte,zone met minimale hoogte,waarschuwing voor overstroming van water,conversie-informatie van voet tot meter
 Rotonde vooruit,Vortex gevoelig gebied vooruit,met de klok mee droogtrommels hier verkocht,toiletwater stroomt met de klok mee
 Reeks gevaarlijke bochten vooruit,spaghetti-wegen vooruit,drijvende strook vooruit,links en rechts bochten vooruit
-Reeks gevaarlijke bochten vooruit,elektrische weg vooruit,scherpe bocht naar links en rechts vooruit,scherpe spaghettibaan vooruit
+Reeks gevaarlijke bochten vooruit,elektrische weg vooruit,scherpe bocht naar links en rechts vooruit,scherpe spaghetti weg vooruit
 Tweerichtingsverkeer,u keert terug op de weg naar rechts,vooruit en achteruit wind vooruit,kwantum directionele weg vooruit

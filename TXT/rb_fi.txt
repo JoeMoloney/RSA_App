@@ -11,11 +11,11 @@ Valtatietiedot,moottoritietiedot,alueelliset tietiedot,kaupunkitietiedot
 Alueelliset tietiedot,moottoritietiedot,kaupunkitietiedot,kansalliset tietiedot
 Alueelliset tietiedot,Kaupunkitietiedot,Moottoritietiedot,Valtatietiedot
 SOS-asettelu,pysäköinti- ja puhelinkoppi,edeltävät hätäpalvelut,vain hätäpalvelujen pysäköinti
-Kaupunki-tai kylätiedot,katutiedot,aluetiedot,läänitiedot
+Kaupunki- tai kylätiedot,katutiedot,aluetiedot,läänitiedot
 Liikenteen rauhoittaminen,nopeusrajoitus,jalankulkijoiden ylitys eteenpäin,kaupungin tai kylän tiedot
-100m moottoritielle,100m moottoritien sisäänkäynnille,100m moottoritielle,tie laskee oikealle
-200m moottoritielle,200m moottoritien sisäänkäynnille,200m moottoritielle,tie laskee oikealle
-300m moottoritien liittymälle,300m moottoritien sisäänkäynnille,300m moottoritielle,Road Dipit oikealle
+100 m moottoritielle,100 m moottoritien sisäänkäynnille,100 m moottoritielle,tie laskee oikealle
+200 m moottoritielle,200 m moottoritien sisäänkäynnille,200 m moottoritielle,tie laskee oikealle
+300 m moottoritien liittymälle,300 m moottoritien sisäänkäynnille,300 m moottoritielle,Road Dipit oikealle
 Kohteen suunta,kaistanvaihto,kaupunkitiedot,aluetiedot
 Edistynyt määränpään suunta,edistynyt kaistanvaihto,edistyneet kaupunkitiedot,edistyneet aluetiedot
 Moottoritien sisäänkäynti eteenpäin,moottoritien silta eteenpäin,matala silta edessä,kaistojen määrä edessä
@@ -27,16 +27,16 @@ Bussikaista vasemmalla,vain pyörätie,vain bussikaista,pyörä- ja raitiovaunuk
 Vain bussit,ei busseja,ei tie edessä,bussikeskus eteenpäin
 Clearway,Ei pääsyä,Yksityinen omaisuus,Keskeneräinen merkki
 Levypysäköinti,lailliset pysäköintitunnit,älä pysäköi tiettyinä aikoina,toiminta-alue nimettyinä päivinä
-Vaihdettava nopeusrajoitusalue,30km/h alue,koulun ylitysalue,vaihdettava koulubussi nopeuden rajoitus
-Vaihdettava tunnelin nopeusrajoitus,80km/h nopeuden rajoitus,80km/h tunnelin nopeuden rajoitus,vaihdettava nopeuden rajoitus
+Vaihdettava nopeusrajoitusalue,30 km / h alue,koulun ylitysalue,vaihdettava koulubussi nopeuden rajoitus
+Vaihdettava tunnelin nopeusrajoitus,80 km / h nopeuden rajoitus,80 km / h tunnelin nopeuden rajoitus,vaihdettava nopeuden rajoitus
 Pyörän kaistan loppu,Pyörän kaistan alku,Vain polkupyörät,Pyörän pysäköinti kaistan päässä
 Raskaan hyötyajoneuvon pysäköintirajoituksen loppu,ei raskasajoneuvon pysäköintiä,raskaan hyötyajoneuvon sisäänpääsyn rajoituksen loppu,vain raskasajoneuvon alue
 Korkeusrajoitus,vähimmäiskorkeuden rajoitus,varoitus tulvatasosta,ajoneuvon pituuden rajoitus
 Oikeanpuoleinen kaista - ei raskasajoneuvojen ohitusta,ei raskasajoneuvoja tämän pisteen ulkopuolella,oikeanpuoleinen kaista päättyy,raskasvaunun akseliraja
-Suurin nopeusrajoitus,vähimmäisnopeusrajoitus,30km n venytys eteenpäin,ei pysäköintimahdollisuutta 30km n kohdalla
-Suurin nopeusrajoitus,vähimmäisnopeusrajoitus,120km n venytys eteenpäin,pysäköinti kielletty 120km lle
+Suurin nopeusrajoitus,vähimmäisnopeusrajoitus,30 km: n venytys eteenpäin,ei pysäköintimahdollisuutta 30 km: n kohdalla
+Suurin nopeusrajoitus,vähimmäisnopeusrajoitus,120 km: n venytys eteenpäin,pysäköinti kielletty 120 km: lle
 Ei jalankulkijoita pääsemään eteenpäin,ohittaa edeltävät jalankulkijat,jalankulkijoilla ei ole oikeuksia edessä,ei jalankulkijoita ole edessä
-Ei pääsyä ajoneuvoihin,joissa akselien lukumäärä on suurempi,ei akseleita,joiden akselimäärä on pienempi,edessä on kolminkertainen este,edessä on kolme tarkastuspistettä
+Ei pääsyä ajoneuvoihin,joissa akselien lukumäärä on suurempi,ei akseleita joiden akselimäärä on pienempi,edessä on kolminkertainen este,edessä on kolme tarkastuspistettä
 Ei pääsyä,vain peruutuskaista,ei tien kaltevuutta,ei yksisuuntaista järjestelmää edessä
 Ei vasenta käännöstä,ei pysäköintiä vasemmalla puolella,ei sisäänkäyntejä vasemmalla puolella,älä tarkkaile tien vasenta reunaa
 Ei ohitusta,yksikaista päättyy,ei pyöräilyä,ei pieniä ajoneuvoja sallittu
@@ -47,14 +47,14 @@ Pysäköinti kielletty,pysäköi vain tien vasemmalla ja oikealla puolella,älä
 Kävelykatu,ei sisäänkäyntiä - Yksityinen omaisuus,Toiminta-alue määrättyinä aikoina,Pysäköinti sallittu määrätyinä aikoina
 Koulun vartijat valvovat liikennevirtaa,jalankulkijoiden on pysähdyttävä liikenteelle,lopetettava laitoshoidon opetus,lopetettava hidastuminen jalankulkijoille
 Polkupyörän alku,pyörärata eteenpäin,polkupyörät kulkevat liikennesuunnassa,polkupyörän seuranta sallittu
-Pysäytä,tuotto,jalankulkijoiden on lopetettava,mielenosoittajien pysäkki
-Vain taksit,pysäköinti vain,taksit sallitaan vain vasemmalle ja oikealle,taksit eivät ole sallittuja vasemmalle ja oikealle,taksien on kiertettävä ympäri
+Pysähdy,tuotto,jalankulkijoiden on lopetettava,mielenosoittajien pysäkki
+Vain taksit pysäköinti vain,taksit sallitaan vain vasemmalle ja oikealle,taksit eivät ole sallittuja vasemmalle ja oikealle,taksien on kiertettävä ympäri
 Raitiovaunukaista oikealla,raitiovaunu lähestyy oikealta,raitiovaunut voivat ohittaa,vain raitiovaunut
 Vain raitiovaunukatu,vain autokatu,eteenpäin yksityisomaisuus,vain jalankulkijoiden katu
 Painorajoitukset edessä,vähimmäispaino sallittu,akseliraja,vähimmäisakseli sallittu
 Tuotto eteenpäin,kenttä eteenpäin,muiden on tuotettava eteenpäin,allekirjoita paikkamerkki - jatka varovasti
 Tuotto eteenpäin - irlantilainen,kenttä eteenpäin - irlantilainen,muiden on tuotettava etukäteen - irlantilainen,Kyltin paikkahenkilö - Jatka varovaisuutta - irlantilainen
-Vyöhykerajoitus,pysäköinti kielletty tai raskasajoneuvot,vain raskasajoneuvot,vähimmäisakselivaatimus,pysäköinti sallittu vain suurille ajoneuvoille
+Vyöhykerajoitus pysäköinti kielletty tai raskasajoneuvot,vain raskasajoneuvot,vähimmäisakselivaatimus,pysäköinti sallittu vain suurille ajoneuvoille
 Edistynyt suunta paikallisiin palveluihin,ennakoiviin paikallisiin palveluihin,alueellisiin tietoihin,luvattomiin aktiviteetteihin
 Edistynyttä tietoa lomailijoille ja matkailulle,tietoa pysäköinnistä edessä,Tourism Park Ahead,Tourism Press Conference Ahead
 Youth Hostel Ahead,Adoption Agency Ahead,Youth Hotel Ahead,Village Information
@@ -64,13 +64,13 @@ Matkailuneuvonnan suunta,tietoa matkailijoiden suunnasta,turistien kiertotie,alu
 Alueen matkailutiedot,turistileirin nimi,kirjautumiskieli,Tourist One Way -järjestelmä
 Matkailukohteiden suunta,eläinlajien yksisuuntainen järjestelmä,linnut vain tämän pisteen ulkopuolella,matkailijoiden työpaikkojen ohjeet
 Hevoset ja ponit,ihmisten on oltava hevosten mukana,hevosten on oltava hevosten mukana,vaaralliset lajit edessä
-Nautat ja maatilan eläimet edessä,varo karjaa,alue,joka tunnetaan kuolettavista nautakarjoista,varo villi villi Bertha
+Nautat ja maatilan eläimet edessä,varo karjaa alue,joka tunnetaan kuolettavista nautakarjoista,varo villi villi Bertha
 Sivutuulet edessä,myydyt kalastusverkot,kuplien puhallus sallittu,keskeneräinen merkki - jatka varoen
 Hirvet ja villieläimet edessä,varo luonnonvaraisia ​​peuroja,tappavien peurojen tiedossa oleva alue,Deer Society Zone
-Aja vasemmalla olevalla tietomerkillä,vain vasemmanpuoleisella ohjauksella varustetut autot,kaksi kaistaa - Käytä vasenta kaistaa,jos tarpeellista,vasenta kaistaa,ellei ohitusta
+Aja vasemmalla olevalla tietomerkillä,vain vasemmanpuoleisella ohjauksella varustetut autot kaksi kaistaa - Käytä vasenta kaistaa,jos tarpeellista vasenta kaistaa,ellei ohitusta
 Juna kulkee eteenpäin valojen ja esteiden kanssa,rautatieasema edessä,vain junien alue,liikennevalot koskevat vain junia
 Matala lentävä lentokone,vain lentokoneiden tie,varo lentokoneita!,Ilmavoimien muistomerkki edessä
-Sähkökaapelit,Nikola Tesla -museo eteenpäin,Vain sähköasentajien alue,alue,joka tunnetaan ulkomaalaisten salamaniskusta - jatka varoen
+Sähkökaapelit,Nikola Tesla -museo eteenpäin,Vain sähköasentajien alue,joka tunnetaan ulkomaalaisten salamaniskusta - jatka varoen
 Kävelytie eteenpäin,Vain jalankulkijoille tarkoitettu alue,Juoksurata eteenpäin,Kävelijät eteenpäin - edetä varoen
 Jyrkkä upotus tien eteen,asteroidikraatteri eteenpäin,Skate Parkin puoliputki eteenpäin,vesijohto eteenpäin
 Jyrkkä nousu eteenpäin,leipä leipomo eteenpäin,dermatologi eteenpäin,mutkikkaat tiet eteenpäin
@@ -81,7 +81,7 @@ Tunneli eteenpäin,palatsin sisäänkäynti eteenpäin,sisäänkäynti tyhjälle
 Suojaamaton kanava tai joki edessä,ajoneuvojen polkumyynti eteenpäin,vain amfibioajoneuvot,vain tämän pisteen takana olevat ajoneuvot
 Ohjattu liikenne,vain vasen käännös,ei oikeaa käännöstä,huomioi tien vasen puoli
 Lippumies eteenpäin,maksullinen mies eteenpäin,kauhat vain tämän pisteen takana,pysyvä tien työntekijä eteenpäin
-tonainen siru,tie voi aiheuttaa renkaan räjähdyksiä,alue,joka tunnetaan pikkukivinä,vain pienille ajoneuvoille
+Irtonainen siru,tie voi aiheuttaa renkaan räjähdyksiä,alue joka tunnetaan pikkukivinä,vain pienille ajoneuvoille
 Jonot todennäköisesti,3 ajoneuvoa enintään ohitettaessa,puhaltaa sarvea kolmen ajoneuvon takana,riittävän kaista kolmelle ajoneuvolle
 Tienrakennukset eteenpäin,lapio myyjä eteenpäin,neliötanssi ja linja tanssia eteenpäin,tien työntekijät ovat vasenkätisiä
 Sivuston käyttö vasemmalla,tien työntekijät ovat oikeakätisiä,neliötansseja ja linjatansseja eteenpäin,tietöitä eteenpäin
@@ -89,7 +89,7 @@ Epätasainen pinta,turha tienpinta edessä,suo maa edessä,amfibioajoneuvot suos
 Vaarallinen mutka eteenpäin,matkustajat nojaavat vasemmalle,tuulet puhaltavat vasemmalle,liberaalivyöhyke vasemmalle
 Vaarallinen kulma eteenpäin,terävät vasemmat kääntyvät vain,äärimmäiset liberaalit vasemmalle,valmistaudu kovaan vasempaan
 Liikenteen yhdistäminen,puiden oksat edessä,vakava jyrkkä vasen kääntyminen eteenpäin,kvantti-käänteinen alue eteenpäin
-Mini edestakaisin liikenneympyrää, edestakaisin oleva liikenneympyrä on valinnainen, myydään täällä myötäpäivään kehräyskuivaimia, valmistaudu äärettömään oikeaan käännökseen
+Mini edestakaisin liikenneympyrä,edestakaisin oleva liikenneympyrä on valinnainen,myydään täällä myötäpäivään,pyörivän pyörän kuivausrummut
 Rajoitettu päähuone,vähimmäiskorkeusvyöhyke,varoitus veden tulvista,muuntotiedot jalasta metriin
 Edessä oleva liikenneympyrä,eteenpäin pyörrealttiit alueet,myydään täällä myötäpäivään olevat kuivausrummut,WC-vesi virtaa myötäpäivään
 Sarja vaarallisia taivutuksia eteenpäin,spagettitiet edessä,ajautuva kaistale eteen,vasemmalle ja oikealle kääntyy eteenpäin
